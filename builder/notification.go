@@ -1,4 +1,4 @@
-package main
+package builder
 
 type Notification struct {
 	Title    string `json:"title"`

@@ -1,4 +1,4 @@
-package main
+package builder
 
 import "fmt"
 
@@ -12,45 +12,45 @@ type NotificationBuilder struct {
 	Type     string `json:"type"`
 }
 
-func newNotificationBuilder() *NotificationBuilder {
+func NewNotificationBuilder() *NotificationBuilder {
 	return &NotificationBuilder{}
 }
 
-func (nb *NotificationBuilder) setTitle(title string) {
+func (nb *NotificationBuilder) SetTitle(title string) {
 	nb.Title = title
 }
 
-func (nb *NotificationBuilder) setSubTitle(subTitle string) {
+func (nb *NotificationBuilder) SetSubTitle(subTitle string) {
 	nb.SubTitle = subTitle
 }
 
-func (nb *NotificationBuilder) setMessage(message string) {
+func (nb *NotificationBuilder) SetMessage(message string) {
 	nb.Message = message
 }
 
-func (nb *NotificationBuilder) setImage(image string) {
+func (nb *NotificationBuilder) SetImage(image string) {
 	nb.Image = image
 }
 
-func (nb *NotificationBuilder) setIcon(icon string) {
+func (nb *NotificationBuilder) SetIcon(icon string) {
 	nb.Icon = icon
 }
 
-func (nb *NotificationBuilder) setPriority(priority int) {
+func (nb *NotificationBuilder) SetPriority(priority int) {
 	nb.Priority = priority
 }
 
-func (nb *NotificationBuilder) setType(notType string) {
+func (nb *NotificationBuilder) SetType(notType string) {
 	nb.Type = notType
 }
 
-func (nb *NotificationBuilder) build() (*Notification, error) {
+func (nb *NotificationBuilder) Build() (*Notification, error) {
 	if nb.Icon != "" && nb.SubTitle == "" {
-		return nil, fmt.Errorf("You need to specify a subtitle when using an icon")
+		return nil, fmt.Errorf("you need to specify a subtitle when using an icon")
 	}
 
 	if nb.Priority > 5 {
-		return nil, fmt.Errorf("Priority must be 0 to 5")
+		return nil, fmt.Errorf("priority must be 0 to 5")
 
 	}
 

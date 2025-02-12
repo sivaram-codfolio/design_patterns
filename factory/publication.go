@@ -1,12 +1,12 @@
-package main
+package factory
 
-type iPublication interface {
-	setName(name string)
-	setPages(pages int)
-	setPublisher(publisher string)
-	getName() string
-	getPages() int
-	getPublisher() string
+type IPublication interface {
+	SetName(name string)
+	SetPages(pages int)
+	SetPublisher(publisher string)
+	GetName() string
+	GetPages() int
+	GetPublisher() string
 }
 
 type Publication struct {
@@ -15,26 +15,26 @@ type Publication struct {
 	publisher string
 }
 
-func (p *Publication) setName(name string) {
+func (p *Publication) SetName(name string) {
 	p.name = name
 }
 
-func (p *Publication) setPages(pages int) {
+func (p *Publication) SetPages(pages int) {
 	p.pages = pages
 }
 
-func (p *Publication) setPublisher(publisher string) {
+func (p *Publication) SetPublisher(publisher string) {
 	p.publisher = publisher
 }
 
-func (p *Publication) getName() string {
+func (p *Publication) GetName() string {
 	return p.name
 }
 
-func (p *Publication) getPages() int {
+func (p *Publication) GetPages() int {
 	return p.pages
 }
 
-func (p *Publication) getPublisher() string {
+func (p *Publication) GetPublisher() string {
 	return p.publisher
 }

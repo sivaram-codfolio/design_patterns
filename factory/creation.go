@@ -1,8 +1,8 @@
-package main
+package factory
 
 import "fmt"
 
-func newPublication(pubType string, name string, pages int, publisher string) (iPublication, error) {
+func NewPublication(pubType string, name string, pages int, publisher string) (IPublication, error) {
 	if pubType == "newspaper" {
 		return createNewspaper(name, pages, publisher), nil
 	}
@@ -11,5 +11,5 @@ func newPublication(pubType string, name string, pages int, publisher string) (i
 		return createMagazine(name, pages, publisher), nil
 	}
 
-	return nil, fmt.Errorf("No such publication type")
+	return nil, fmt.Errorf("no such publication type")
 }
