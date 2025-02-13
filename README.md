@@ -13,7 +13,7 @@ The Builder Pattern helps construct complex objects in a structured manner. Here
 📌 *Example Execution*
 
 ```bash
-go run builder/main.go builder/notification.go builder/builder.go
+go run cmd/builder.go
 ```
 
 📜 *Sample Output*
@@ -29,7 +29,7 @@ The Factory Pattern provides a way to create objects without specifying their ex
 📌 *Example Execution*
 
 ```bash
-go run factory/main.go factory/factory.go factory/publication.go factory/newspaper.go factory/magazine.go
+go run cmd/factory.go
 ```
 
 📜 *Sample Output*
@@ -63,6 +63,37 @@ Name: The Standard
 Pages: 30
 Publisher: Standarders
 --------------------
+```
+
+🔄 **Singleton Pattern**
+The Singleton Pattern ensures that only one instance of a class exists and provides a global access point to it. It is useful for managing shared resources like logging, database connections, or configurations.
+
+📌 *Example Execution*
+
+```bash
+go run cmd/singleton.go
+```
+
+📜 *Sample Output*
+
+```bash
+Creating Logger Instance
+Returning Logger Instance
+1 : This is a log message
+Returning Logger Instance
+2 : This is a log message
+Returning Logger Instance
+3 : This is a log message
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+Returning Logger Instance
+_
 ```
 
 📌 **Future Plans**
