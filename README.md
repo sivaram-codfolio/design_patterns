@@ -96,10 +96,41 @@ Returning Logger Instance
 _
 ```
 
+🏢 **Facade Pattern**
+
+The Facade Pattern provides a simplified interface to a complex subsystem, making it easier to use. It hides the complexities of the system and exposes only the necessary parts.
+
+📌 *Example Execution*
+
+```bash
+go run cmd/facade.go
+```
+
+📜 *Sample Output*
+
+```bash
+Making an Americano
+--------------------
+Starting coffee order with beans: 5 and grind level 2
+Grinding the beans: 5 beans at 2 granularity
+Adding hot water: 8
+Ending coffee order
+Americano is ready!
+
+Making a Latte
+--------------------
+Starting coffee order with beans: 7.5 and grind level 4
+Grinding the beans: 7.5 beans at 4 granularity
+Adding hot water: 12
+Adding milk: 3 oz
+Foam setting: true
+Ending coffee order
+Latte is ready!
+```
+
 📌 **Future Plans**
 
 This repository will continue to grow with more design patterns, including:
-- Singleton
 - Adapter
 - Observer
 - Strategy
