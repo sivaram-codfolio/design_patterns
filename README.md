@@ -128,10 +128,43 @@ Ending coffee order
 Latte is ready!
 ```
 
+🏢 **Adapter Pattern**
+
+The Adapter Pattern allows incompatible interfaces to work together. It acts as a bridge between two interfaces, enabling code reusability and flexibility.
+
+📌 *Example Execution*
+
+```bash
+go run cmd/adapter.go
+```
+
+📜 *Sample Output*
+
+```bash
+SonyTV is now on
+Increasing SonyTV volume to 21
+Decreasing SonyTV volume to 20
+Decreasing SonyTV channel to 10
+Decreasing SonyTV channel to 9
+Setting SonyTV channel to 68
+SonyTV is now off
+--------------------
+SamsungTV is on
+SamsungTV volume is 35
+Setting SamsungTV volume to 36
+SamsungTV volume is 36
+Setting SamsungTV volume to 35
+SamsungTV channel is 13
+Setting SamsungTV channel to 14
+SamsungTV channel is 14
+Setting SamsungTV channel to 13
+Setting SamsungTV channel to 68
+SamsungTV is off
+```
+
 📌 **Future Plans**
 
 This repository will continue to grow with more design patterns, including:
-- Adapter
 - Observer
 - Strategy
 - …and more!
