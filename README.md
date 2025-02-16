@@ -162,10 +162,29 @@ Setting SamsungTV channel to 68
 SamsungTV is off
 ```
 
+🏢 **Observer Pattern**
+
+The Observer Pattern is a behavioral design pattern where an object (the subject) maintains a list of observers that need to be notified of any state changes.
+
+📌 *Example Execution*
+
+```bash
+go run cmd/observer.go
+```
+
+📜 *Sample Output*
+
+```bash
+Listener: Listener 1 got data change: Monday!
+Listener: Listener 2 got data change: Monday!
+Listener: Listener 1 got data change: Wednesday!
+Listener: Listener 2 got data change: Wednesday!
+Listener: Listener 1 got data change: Friday!
+```
+
 📌 **Future Plans**
 
 This repository will continue to grow with more design patterns, including:
-- Observer
 - Strategy
 - …and more!
 
