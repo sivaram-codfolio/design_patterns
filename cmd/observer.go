@@ -24,8 +24,8 @@ func main() {
 	subj.ChangeItem("Monday!")
 	subj.ChangeItem("Wednesday!")
 
-	// Try to unregister one of the observers
-	subj.UnregisterObserver(listener2)
+	// // Try to unregister one of the observers
+	// subj.UnregisterObserver(listener2)
 
 	// Change the data again, now only the first listener is called
 	subj.ChangeItem("Friday!")
