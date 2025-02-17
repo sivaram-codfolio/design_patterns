@@ -182,6 +182,42 @@ Listener: Listener 2 got data change: Wednesday!
 Listener: Listener 1 got data change: Friday!
 ```
 
+🏢 **Iterator Pattern**
+
+The Iterator Pattern in Go is a behavioral design pattern used to traverse elements of a collection without exposing its underlying structure. Go doesn’t have built-in iterators like some other languages (e.g., Python or Java), but you can implement the iterator pattern using structs and methods.
+
+📌 *Example Execution*
+
+```bash
+go run cmd/iterator.go
+```
+
+📜 *Sample Output*
+
+```bash
+Book title: War and Peace
+Book title: Crime and Punishment
+Book title: Brave New World
+Book title: Catcher in the Rye
+Book title: To Kill a Mockingbird
+Book title: The Grapes of Wrath
+Book title: Wuthering Heights
+Book author: Leo Tolstoy
+Book author: Leo Tolstoy
+Book author: Aldous Huxley
+Book author: J.D. Salinger
+Book author: Harper Lee
+Book author: John Steinbeck
+Book author: Emily Bronte
+Book &{Name:War and Peace Author:Leo Tolstoy PageCount:864 Type:0}
+Book &{Name:Crime and Punishment Author:Leo Tolstoy PageCount:1225 Type:1}
+Book &{Name:Brave New World Author:Aldous Huxley PageCount:325 Type:2}
+Book &{Name:Catcher in the Rye Author:J.D. Salinger PageCount:206 Type:0}
+Book &{Name:To Kill a Mockingbird Author:Harper Lee PageCount:399 Type:2}
+Book &{Name:The Grapes of Wrath Author:John Steinbeck PageCount:464 Type:0}
+Book &{Name:Wuthering Heights Author:Emily Bronte PageCount:288 Type:3}
+```
+
 📌 **Future Plans**
 
 This repository will continue to grow with more design patterns, including:
